@@ -6,14 +6,14 @@ namespace Holiday
     {
         public static void Main()
         {
-            DateTime vacationDate = new DateTime(2019, 3, 15);
+            DateTime vacationDate = new DateTime(2019, 3, 17);
             DayReturning(vacationDate, 12);
             Console.ReadLine();
         }
 
         public static string DayReturning(DateTime date, int daysGone)
         {
-            DateTime returningDate = date.AddDays(14);
+            DateTime returningDate = date.AddDays(daysGone);
 
             return returningDate.DayOfWeek.ToString();
         }
